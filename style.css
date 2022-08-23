@@ -51,7 +51,7 @@ body{
     font-size: 1.05rem;
     font-weight: normal;
     color: var(--grayish-blue);
-    text-shadow: 0px 0px 3px var(--bright-yellow);
+    text-shadow: 0px 0px 5px var(--bright-yellow);
     margin-bottom: 1rem;
 }
 
