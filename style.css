@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --benefits: hsl(179, 61%, 48%);
+  --hover-yellow: hsl(71, 64%, 50%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Karla', sans-serif;;
+}
+
+.container{
+    width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(78, 78, 78, 0.2);
+}
+
+.top-section{
+    padding: 3rem 2.5rem;
+}
+
+.top-section h1{
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: var(--cyan);
+}
+
+.top-section h2{
+    font-size: 1.05rem;
+    font-weight: normal;
+    color: var(--grayish-blue);
+    text-shadow: 0px 0px 3px var(--bright-yellow);
+    margin-bottom: 1rem;
+}
+
+.top-section p{
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: var(--grayish-blue);
+}
+
+.bottom-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bottom-section .subscription{
+    width: 50%;
+    background-color: var(--cyan);
+    padding: 2.5rem;
+    border-bottom-left-radius: 10px;
+}
+.bottom-section .benefits{
+    width: 50%;
+    background-color: var(--benefits);
+    padding: 2.5rem;
+    border-bottom-right-radius: 10px;
+}
+
+.subscription .subs-heading{
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.price{
+    font-size: 1.7rem;
+    color: #fff;
+    margin-bottom: 0.6rem;
+}
+
+.price span{
+    font-size: 0.9rem;
+    vertical-align: middle;
+    color: var(--light-gray);
+    font-weight: normal;
+}
+
+.subscription p{
+    color: var(--light-gray);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.subscription .btn{
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--bright-yellow);
+    color: #fff;
+    font-family: "Karla", sans-serif;
+    box-shadow: 0px 10px 10px rgba(78, 78, 78, 0.2);
+    transition: 0.5s;
+}
+
+.subscription .btn:hover{
+    background-color: var(--hover-yellow);
+    transform: translateY(-5px);
+}
+
+.benefits h2{
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.benefits li{
+    color: var(--light-gray);
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+  /* .attribution { 
+    font-size: 11px;
+    text-align: center;
+    margin-top: 1rem;
+}
+  .attribution a { 
+    color: hsl(228, 45%, 44%); 
+} */
+
+@media only screen and (max-width: 600px){
+    .container{
+        width: 320px;
+        border-radius: 5px;
+    }
+
+    .top-section{
+        padding: 2rem 1.5rem;
+    }
+
+    .top-section h1{
+        font-size: 1.3rem;
+    }
+
+    .top-section h2{
+        font-size: 1rem;
+    }
+
+    .top-section p{
+        font-size: 0.85rem;
+    }
+
+    .bottom-section{
+        flex-direction: column;
+    }
+
+    .bottom-section .subscription{
+        width: 100%;
+        background-color: var(--cyan);
+        padding: 2rem;
+        border-bottom-left-radius: 0px;
+    }
+    .bottom-section .benefits{
+        width: 100%;
+        background-color: var(--benefits);
+        padding: 2rem;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .subscription .btn{
+        font-size: 1rem;
+    }
+    
+}
